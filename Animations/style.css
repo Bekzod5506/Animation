@@ -1,0 +1,65 @@
+.box{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background-color: aqua;
+    border: 2px solid red;
+    border-radius: 5px;
+    animation-timing-function: linear;
+    animation-name: box-mover;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 10ms;
+    animation-direction: normal;
+    
+}
+.box:hover{
+    animation-play-state: paused;
+}
+img{
+    width: 100px;
+    height: 100px;
+    }
+    @keyframes box-mover {
+        0%{ left: 0;
+            width: 300px;
+            height: 150px;
+            background-color: aqua;
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+        25%{
+            left: 1120px;
+            top: 0;
+            width: 300px;
+            height: 150px;
+            background-color: yellowgreen;
+              }
+           50%{
+            left:  1120px;
+            top: 610px;
+            right: 0;
+            width: 300px;
+            height: 150px;
+            background-color: burlywood;
+        }  
+        75%{ width: 300px;
+            height: 150px;
+            top: 610px;
+            left: 0;
+            background-color: deeppink;
+            
+        }
+        100%{ width: 300px;
+             height: 150px;
+             top: 0;
+             left: 0;
+             background-color: aqua;
+    
+
+    }
+    }
+   
